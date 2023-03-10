@@ -6,6 +6,7 @@ headingDivider: 2
 paginate: true
 header: '&e tech'
 footer: 'Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)'
+backgroundImage: 'img/react-logo.svg'
 style: |
   header {
     height: 100px;
@@ -27,23 +28,36 @@ style: |
   }
 --->
 
-# Plain content
+# Component Lifecycle
 
-Made with [Marp](https://marp.app/)
+* React components have a lifecycle with 3 phases:
+* Mounting - triggered on creation of component and insertion into the DOM
+* Updating - triggered when a component's props or state change
+* Unmounting - triggered before the component is removed from the DOM
+* Each phase has a number of methods we can use to hook into this lifecycle if we are using class components
 
-- these are
-- bullet points
+# Component lifecycle - mounting
 
-# Code content
+* Triggered on creation of component and insertion into the DOM
+* Methods:
+* `constructor(props)` - sets up initial state
+* `getDerivedStateFromProps(props, state)` - called before rendering the DOM and sets state based on props
+* `render()` - returns JSX which will be rendered as HTML in the DOM
+* `componentDidMount()` - called after the DOM has rendered, often used to send requests to fetch data
 
-```jsx
-function MyComponent () {
-  var helloWorldText = "hello world";
-  return <h2>{helloWorldText}</h2>;
-}
-```
+# Component lifecycle - updating
 
-# Image content
+* Triggered when a component's props or state changes
+* Can occur multiple times
+* Methods:
+* `getDerivedStateFromProps(props, state)` - called before rendering the DOM and sets state based on props
+* `shouldComponentUpdate(nextProps, nextState)` - decides wether the component should rerender, returns a boolean
+* `render()` - returns JSX which will re rendered updated HTML in the DOM
+* `getSnapshotBeforeUpdate(prevProps, prevState)` - called after render so you can see the previous state
+* `componentDidUpdate(prevProps, prevState, snapshot)` - called after DOM updates, required if using `getSnapshotBeforeUpdate`, calling `setState` will cause render loop
 
-![](img/your-image-path.png)
+# Component lifecycle - unmounting
 
+* Triggered before the component is removed from the DOM
+* Methods:
+* `componentWillUnmount()` - used to cleanup after itself, once called the component is destroyed
