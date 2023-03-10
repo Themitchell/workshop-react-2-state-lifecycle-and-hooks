@@ -8,6 +8,10 @@ header: '&e tech'
 footer: 'Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)'
 backgroundImage: 'img/react-logo.svg'
 style: |
+  :root {
+    --marpit-root-font-size: 30px;
+  }
+
   header {
     height: 100px;
     width: 100px;
@@ -27,6 +31,14 @@ style: |
     font-size: 0.6rem;
   }
 --->
+
+# Introduction
+
+* Pre React 16.8, functional components do not have state
+* Instead we have to use class components to add state
+* Post React 16.8 we can use something called "hooks" to add state to functional components
+* Hooks dont just cover state, they cover lifecycle events and other features too
+* This simplifies our components
 
 # Component Lifecycle
 
