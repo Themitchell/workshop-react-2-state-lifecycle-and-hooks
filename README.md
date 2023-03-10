@@ -1,7 +1,6 @@
 <!---
 marp: true
-theme: uncover
-lead: true
+theme: gaia
 class: invert
 headingDivider: 2
 paginate: true
@@ -9,6 +8,10 @@ header: '&e tech'
 footer: 'Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)'
 backgroundImage: 'img/react-logo.svg'
 style: |
+  :root {
+    --color-background: ##202228;
+  }
+
   section {
     font-size: 30px;
   }
