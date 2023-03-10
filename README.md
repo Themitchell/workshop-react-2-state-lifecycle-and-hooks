@@ -1,6 +1,7 @@
 <!---
 marp: true
 theme: uncover
+lead: true
 class: invert
 headingDivider: 2
 paginate: true
