@@ -8,11 +8,11 @@ header: '&e tech'
 footer: 'Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)'
 backgroundImage: 'img/react-logo.svg'
 style: |
-  :root {
-    --marpit-root-font-size: 30px;
+  section {
+    font-size: 20px;
   }
 
-  header {
+  section header {
     height: 100px;
     width: 100px;
     float: left;
@@ -25,10 +25,6 @@ style: |
     -webkit-mask-size: contain;
     mask-size: contain;
     text-indent: -999999px
-  }
-
-  footer {
-    font-size: 0.6rem;
   }
 --->
 
