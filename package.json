@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "marp --server",
+    "build": "marp"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^2.4.0"
+  }
+}

@@ -1,19 +1,25 @@
 <!---
 marp: true
-theme: gaia
+theme: uncover
 class: invert
 headingDivider: 2
 paginate: true
 header: '&e tech'
 footer: 'Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)'
-backgroundImage: 'img/react-logo.svg'
+backgroundImage: url('background/path')
+backgroundPosition: 120% 120%
+backgroundSize: 40%
 style: |
-  :root {
-    --color-background: ##202228;
+  section,
+  section code {
+    font-size: 30px;
+    text-align: left;
   }
 
-  section {
-    font-size: 30px;
+  section ul,
+  section ol,
+  section img {
+    margin-left: 0;
   }
 
   section header {
@@ -31,7 +37,15 @@ style: |
     mask-size: contain;
     text-indent: -99999999px
   }
+
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
 --->
+
+# React state, lifecycle and hooks
 
 # Introduction
 
