@@ -77,10 +77,11 @@ section header {
 ;background-image:url('background/path');background-position:120% 120%;background-repeat:no-repeat;background-size:40%;">
 <header>&amp;e tech</header>
 
-<h1>React state, lifecycle and hooks</h1>
+<h1>React Workshop</h1>
+<p>State, lifecycle and hooks</p>
 <footer>Created with <a href="https://marp.app">Marp</a> and <a href="https://pages.github.com">Github Pages</a></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-marpit-fragments="5" data-class="invert" data-paginate="true" data-header="&amp;e tech" data-footer="Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)" data-background-image="url('background/path')" data-background-position="120% 120%" data-background-size="40%" data-theme="uncover" data-heading-divider="2" data-style="section,
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-class="invert" data-paginate="true" data-header="&amp;e tech" data-footer="Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)" data-background-image="url('background/path')" data-background-position="120% 120%" data-background-size="40%" data-theme="uncover" data-heading-divider="2" data-style="section,
 section code {
   font-size: 30px;
   text-align: left;
@@ -150,15 +151,15 @@ section header {
 <header>&amp;e tech</header>
 <h1>Introduction</h1>
 <ul>
-<li data-marpit-fragment="1">Pre React 16.8, functional components do not have state</li>
-<li data-marpit-fragment="2">Instead we have to use class components to add state</li>
-<li data-marpit-fragment="3">Post React 16.8 we can use something called &quot;hooks&quot; to add state to functional components</li>
-<li data-marpit-fragment="4">Hooks dont just cover state, they cover lifecycle events and other features too</li>
-<li data-marpit-fragment="5">This simplifies our components</li>
+<li>Pre React 16.8, functional components do not have state</li>
+<li>Instead we have to use class components to add state</li>
+<li>Post React 16.8 we can use something called &quot;hooks&quot; to add state to functional components</li>
+<li>Hooks dont just cover state, they cover lifecycle events and other features too</li>
+<li>This simplifies our components</li>
 </ul>
 <footer>Created with <a href="https://marp.app">Marp</a> and <a href="https://pages.github.com">Github Pages</a></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-marpit-fragments="5" data-class="invert" data-paginate="true" data-header="&amp;e tech" data-footer="Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)" data-background-image="url('background/path')" data-background-position="120% 120%" data-background-size="40%" data-theme="uncover" data-heading-divider="2" data-style="section,
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-class="invert" data-paginate="true" data-header="&amp;e tech" data-footer="Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)" data-background-image="url('background/path')" data-background-position="120% 120%" data-background-size="40%" data-theme="uncover" data-heading-divider="2" data-style="section,
 section code {
   font-size: 30px;
   text-align: left;
@@ -228,15 +229,15 @@ section header {
 <header>&amp;e tech</header>
 <h1>Component Lifecycle</h1>
 <ul>
-<li data-marpit-fragment="1">React components have a lifecycle with 3 phases:</li>
-<li data-marpit-fragment="2">Mounting - triggered on creation of component and insertion into the DOM</li>
-<li data-marpit-fragment="3">Updating - triggered when a component's props or state change</li>
-<li data-marpit-fragment="4">Unmounting - triggered before the component is removed from the DOM</li>
-<li data-marpit-fragment="5">Each phase has a number of methods to hook into lifecycle events</li>
+<li>React components have a lifecycle with 3 phases:</li>
+<li>Mounting - triggered on creation of component and insertion into the DOM</li>
+<li>Updating - triggered when a component's props or state change</li>
+<li>Unmounting - triggered before the component is removed from the DOM</li>
+<li>Each phase has a number of methods to hook into lifecycle events</li>
 </ul>
 <footer>Created with <a href="https://marp.app">Marp</a> and <a href="https://pages.github.com">Github Pages</a></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-marpit-fragments="6" data-class="invert" data-paginate="true" data-header="&amp;e tech" data-footer="Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)" data-background-image="url('background/path')" data-background-position="120% 120%" data-background-size="40%" data-theme="uncover" data-heading-divider="2" data-style="section,
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-class="invert" data-paginate="true" data-header="&amp;e tech" data-footer="Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)" data-background-image="url('background/path')" data-background-position="120% 120%" data-background-size="40%" data-theme="uncover" data-heading-divider="2" data-style="section,
 section code {
   font-size: 30px;
   text-align: left;
@@ -306,16 +307,16 @@ section header {
 <header>&amp;e tech</header>
 <h1>Component lifecycle - mounting</h1>
 <ul>
-<li data-marpit-fragment="1">Triggered on creation of component and insertion into the DOM</li>
-<li data-marpit-fragment="2">Methods:</li>
-<li data-marpit-fragment="3"><code>constructor(props)</code> - sets up initial state</li>
-<li data-marpit-fragment="4"><code>getDerivedStateFromProps(props, state)</code> - sets state from props before rendering DOM</li>
-<li data-marpit-fragment="5"><code>render()</code> - returns JSX to be rendered into the DOM</li>
-<li data-marpit-fragment="6"><code>componentDidMount()</code> - called after the DOM has rendered</li>
+<li>Triggered on creation of component and insertion into the DOM</li>
+<li>Methods:</li>
+<li><code>constructor(props)</code> - sets up initial state</li>
+<li><code>getDerivedStateFromProps(props, state)</code> - sets state from props before rendering DOM</li>
+<li><code>render()</code> - returns JSX to be rendered into the DOM</li>
+<li><code>componentDidMount()</code> - called after the DOM has rendered</li>
 </ul>
 <footer>Created with <a href="https://marp.app">Marp</a> and <a href="https://pages.github.com">Github Pages</a></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-marpit-fragments="7" data-class="invert" data-paginate="true" data-header="&amp;e tech" data-footer="Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)" data-background-image="url('background/path')" data-background-position="120% 120%" data-background-size="40%" data-theme="uncover" data-heading-divider="2" data-style="section,
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-class="invert" data-paginate="true" data-header="&amp;e tech" data-footer="Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)" data-background-image="url('background/path')" data-background-position="120% 120%" data-background-size="40%" data-theme="uncover" data-heading-divider="2" data-style="section,
 section code {
   font-size: 30px;
   text-align: left;
@@ -385,17 +386,17 @@ section header {
 <header>&amp;e tech</header>
 <h1>Component lifecycle - updating</h1>
 <ul>
-<li data-marpit-fragment="1">Triggered when a component's props or state changes and can occur more than once</li>
-<li data-marpit-fragment="2">Methods:</li>
-<li data-marpit-fragment="3"><code>getDerivedStateFromProps(props, state)</code> - sets state from props before rendering DOM</li>
-<li data-marpit-fragment="4"><code>shouldComponentUpdate(nextProps, nextState)</code> - decides wether the component should rerender</li>
-<li data-marpit-fragment="5"><code>render()</code> - returns JSX to be re rendered and update the DOM</li>
-<li data-marpit-fragment="6"><code>getSnapshotBeforeUpdate(prevProps, prevState)</code> - called after render so you can see the previous state</li>
-<li data-marpit-fragment="7"><code>componentDidUpdate(prevProps, prevState, snapshot)</code> - called after DOM updates</li>
+<li>Triggered when a component's props or state changes and can occur more than once</li>
+<li>Methods:</li>
+<li><code>getDerivedStateFromProps(props, state)</code> - sets state from props before rendering DOM</li>
+<li><code>shouldComponentUpdate(nextProps, nextState)</code> - decides wether the component should rerender</li>
+<li><code>render()</code> - returns JSX to be re rendered and update the DOM</li>
+<li><code>getSnapshotBeforeUpdate(prevProps, prevState)</code> - called after render so you can see the previous state</li>
+<li><code>componentDidUpdate(prevProps, prevState, snapshot)</code> - called after DOM updates</li>
 </ul>
 <footer>Created with <a href="https://marp.app">Marp</a> and <a href="https://pages.github.com">Github Pages</a></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-marpit-fragments="3" data-class="invert" data-paginate="true" data-header="&amp;e tech" data-footer="Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)" data-background-image="url('background/path')" data-background-position="120% 120%" data-background-size="40%" data-theme="uncover" data-heading-divider="2" data-style="section,
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="invert" data-paginate="true" data-header="&amp;e tech" data-footer="Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)" data-background-image="url('background/path')" data-background-position="120% 120%" data-background-size="40%" data-theme="uncover" data-heading-divider="2" data-style="section,
 section code {
   font-size: 30px;
   text-align: left;
@@ -465,9 +466,9 @@ section header {
 <header>&amp;e tech</header>
 <h1>Component lifecycle - unmounting</h1>
 <ul>
-<li data-marpit-fragment="1">Triggered before the component is removed from the DOM</li>
-<li data-marpit-fragment="2">Methods:</li>
-<li data-marpit-fragment="3"><code>componentWillUnmount()</code> - used to cleanup after itself, once called the component is destroyed</li>
+<li>Triggered before the component is removed from the DOM</li>
+<li>Methods:</li>
+<li><code>componentWillUnmount()</code> - used to cleanup after itself, once called the component is destroyed</li>
 </ul>
 <footer>Created with <a href="https://marp.app">Marp</a> and <a href="https://pages.github.com">Github Pages</a></footer>
 </section>
