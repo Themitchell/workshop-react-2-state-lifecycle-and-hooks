@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "marp --server",
+    "start": "marp -I . --server",
     "build": "marp README.md -o build/index.html"
   },
   "devDependencies": {
