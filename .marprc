@@ -1,4 +1,2 @@
 allowLocalFiles: true
 html: true
-inputDir: .
-output: build

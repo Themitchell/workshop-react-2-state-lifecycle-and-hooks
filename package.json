@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "marp --server",
-    "build": "marp"
+    "build": "marp README.md -o build/index.html"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^2.4.0"
