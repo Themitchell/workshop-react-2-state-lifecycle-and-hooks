@@ -45,45 +45,47 @@ style: |
   }
 --->
 
-# React state, lifecycle and hooks
+# React Workshop
+
+State, lifecycle and hooks
 
 # Introduction
 
-* Pre React 16.8, functional components do not have state
-* Instead we have to use class components to add state
-* Post React 16.8 we can use something called "hooks" to add state to functional components
-* Hooks dont just cover state, they cover lifecycle events and other features too
-* This simplifies our components
+- Pre React 16.8, functional components do not have state
+- Instead we have to use class components to add state
+- Post React 16.8 we can use something called "hooks" to add state to functional components
+- Hooks dont just cover state, they cover lifecycle events and other features too
+- This simplifies our components
 
 # Component Lifecycle
 
-* React components have a lifecycle with 3 phases:
-* Mounting - triggered on creation of component and insertion into the DOM
-* Updating - triggered when a component's props or state change
-* Unmounting - triggered before the component is removed from the DOM
-* Each phase has a number of methods to hook into lifecycle events
+- React components have a lifecycle with 3 phases:
+- Mounting - triggered on creation of component and insertion into the DOM
+- Updating - triggered when a component's props or state change
+- Unmounting - triggered before the component is removed from the DOM
+- Each phase has a number of methods to hook into lifecycle events
 
 # Component lifecycle - mounting
 
-* Triggered on creation of component and insertion into the DOM
-* Methods:
-* `constructor(props)` - sets up initial state
-* `getDerivedStateFromProps(props, state)` - sets state from props before rendering DOM
-* `render()` - returns JSX to be rendered into the DOM
-* `componentDidMount()` - called after the DOM has rendered
+- Triggered on creation of component and insertion into the DOM
+- Methods:
+- `constructor(props)` - sets up initial state
+- `getDerivedStateFromProps(props, state)` - sets state from props before rendering DOM
+- `render()` - returns JSX to be rendered into the DOM
+- `componentDidMount()` - called after the DOM has rendered
 
 # Component lifecycle - updating
 
-* Triggered when a component's props or state changes and can occur more than once
-* Methods:
-* `getDerivedStateFromProps(props, state)` - sets state from props before rendering DOM
-* `shouldComponentUpdate(nextProps, nextState)` - decides wether the component should rerender
-* `render()` - returns JSX to be re rendered and update the DOM
-* `getSnapshotBeforeUpdate(prevProps, prevState)` - called after render so you can see the previous state
-* `componentDidUpdate(prevProps, prevState, snapshot)` - called after DOM updates
+- Triggered when a component's props or state changes and can occur more than once
+- Methods:
+- `getDerivedStateFromProps(props, state)` - sets state from props before rendering DOM
+- `shouldComponentUpdate(nextProps, nextState)` - decides wether the component should rerender
+- `render()` - returns JSX to be re rendered and update the DOM
+- `getSnapshotBeforeUpdate(prevProps, prevState)` - called after render so you can see the previous state
+- `componentDidUpdate(prevProps, prevState, snapshot)` - called after DOM updates
 
 # Component lifecycle - unmounting
 
-* Triggered before the component is removed from the DOM
-* Methods:
-* `componentWillUnmount()` - used to cleanup after itself, once called the component is destroyed
+- Triggered before the component is removed from the DOM
+- Methods:
+- `componentWillUnmount()` - used to cleanup after itself, once called the component is destroyed
