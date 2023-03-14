@@ -6,7 +6,7 @@ headingDivider: 2
 paginate: true
 header: '&e tech'
 footer: 'Created with [Marp](https://marp.app) and [Github Pages](https://pages.github.com)'
-backgroundImage: url('background/path')
+backgroundImage: url('img/react-logo.svg')
 backgroundPosition: 120% 120%
 backgroundSize: 40%
 style: |
