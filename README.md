@@ -291,10 +291,8 @@ function UserComponent (props) {
 
 <div class="columns">
 
-- We can use `componentDidMount` to fetch data
-- `componentDidMount` is called after the first render
-- this means components can render with initial state at first
 - We can use `componentWillUnmount` to cleanup before unmounting
+- `componentWillUnmount` is called before the component is removed from the DOM
 
 ```jsx
 class UserComponent extends React.Component {
@@ -381,7 +379,7 @@ class UserComponent extends React.Component {
 - We may need to do some complex setting of the state when something changes
 - We can do this using something called reducers
 - In older versions of React we had no reducers
-- Insted in old react we used Redux to manage state which "connects" components
+- Instead in old react we used Redux to manage state which "connects" components
 - In new versions we can use reducers with functional components
 
 # What is a reducer
