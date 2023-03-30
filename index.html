@@ -1664,10 +1664,8 @@ section header img {
 <h1>Cleaning up side effects in class components</h1>
 <div class="columns">
 <ul>
-<li>We can use <code>componentDidMount</code> to fetch data</li>
-<li><code>componentDidMount</code> is called after the first render</li>
-<li>this means components can render with initial state at first</li>
 <li>We can use <code>componentWillUnmount</code> to cleanup before unmounting</li>
+<li><code>componentWillUnmount</code> is called before the component is removed from the DOM</li>
 </ul>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-jsx"><span class="hljs-keyword">class</span> <span class="hljs-title class_">UserComponent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">React.Component</span> {
   <span class="hljs-title function_">constructor</span> (props) {
@@ -2143,7 +2141,7 @@ section header img {
 <li>We may need to do some complex setting of the state when something changes</li>
 <li>We can do this using something called reducers</li>
 <li>In older versions of React we had no reducers</li>
-<li>Insted in old react we used Redux to manage state which &quot;connects&quot; components</li>
+<li>Instead in old react we used Redux to manage state which &quot;connects&quot; components</li>
 <li>In new versions we can use reducers with functional components</li>
 </ul>
 <footer>Created with <a href="https://marp.app">Marp</a> and <a href="https://pages.github.com">Github Pages</a></footer>
