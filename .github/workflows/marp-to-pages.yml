@@ -11,6 +11,8 @@ on:
       - closed
 permissions:
   contents: write
+  pull-request: write
+  
 jobs:
   build:
     runs-on: ubuntu-latest
